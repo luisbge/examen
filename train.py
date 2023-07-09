@@ -9,8 +9,6 @@ from tensorflow.python.keras import backend as K
 
 K.clear_session()
 
-
-
 data_entrenamiento = './CarneDataset/train'
 data_validacion = './CarneDataset/test'
 
@@ -29,7 +27,6 @@ tamano_filtro2 = (2, 2)
 tamano_pool = (2, 2)
 clases = 8
 lr = 0.0004
-
 
 ##Preparamos nuestras imagenes
 
@@ -68,9 +65,6 @@ cnn.add(Dense(clases, activation='softmax'))
 cnn.compile(loss='categorical_crossentropy',
             optimizer=optimizers.Adam(lr=lr),
             metrics=['accuracy'])
-
-
-
 
 cnn.fit_generator(
     entrenamiento_generador,
