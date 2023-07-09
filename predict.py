@@ -16,10 +16,19 @@ def predict(file):
   result = array[0]
   answer = np.argmax(result)
   if answer == 0:
-    print("pred: Perro")
+    print("pred: Carne 1")
   elif answer == 1:
-    print("pred: Gato")
+    print("pred: Carne 2")
   elif answer == 2:
-    print("pred: Gorila")
-
+    print("pred: Carne 3")
+  if answer == 3:
+    print("pred: Carne 4")
+  elif answer == 4:
+    print("pred: Carne 5")
+  elif answer == 5:
+    print("pred: Carne 6")
+  elif answer == 6:
+    print("pred: Carne 7")
+  elif answer == 7:
+    print("pred: Carne 8")
   return answer
